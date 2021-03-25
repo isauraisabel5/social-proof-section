@@ -1,0 +1,263 @@
+.attribution {font-size: 11px; text-align: center;}
+.attribution a {color: hsl(228, 45%, 44%);}
+
+:root {
+    --dark_magenta:hsl(300, 43%, 22%);
+    --soft_pink:hsl(333, 80%, 67%);
+    --grayish_magenta: hsl(303, 10%, 53%);
+    --light_grayish_magenta:hsl(300, 24%, 96%);
+}
+
+html {
+    box-sizing: border-box;
+    font-family: 'Spartan', sans-serif;
+    font-size:1rem;
+}
+
+*, *::before, *::after {
+    box-sizing: inherit;
+}
+
+body {
+    background-color: hsl(0, 0%, 100%);
+    flex-wrap: wrap;
+}
+
+.container {
+    min-width: 20rem;
+    max-width: 62.5rem;
+    padding:1.5rem;
+}
+
+.users {
+    color: var(--dark_magenta);
+}
+
+.users h2 {
+    font-weight: 700;
+    font-size: 2rem;
+    text-align: center;
+}
+
+.users p {
+    text-align: center;
+    font-weight: 400;
+    font-size: 1.1rem;
+    margin-bottom: 3rem;
+}
+.rated {
+    max-width:23rem;
+}
+
+.rated_one {
+    background-color: var(--light_grayish_magenta);
+    padding:1rem;
+    border-radius: 6px;
+    margin-bottom: 1rem;
+}
+
+.rated_one h3 {
+    margin-top:0.8rem;
+    margin-bottom: 0.2rem;
+    font-size: 0.8rem;
+    text-align: center;
+}
+
+.rated_two {
+    background-color: var(--light_grayish_magenta);
+    padding:1rem;
+    border-radius: 6px;
+    margin-bottom: 1rem;
+}
+
+.rated_two h3 {
+    margin-top:0.8rem;
+    margin-bottom: 0.2rem;
+    font-size: 0.8rem;
+    text-align: center;
+}
+
+.rated_three {
+    background-color: var(--light_grayish_magenta);
+    padding:1rem;
+    border-radius: 6px;
+    margin-bottom: 1rem;
+}
+
+.rated_three h3 {
+    margin-top:0.8rem;
+    margin-bottom: 0.2rem;
+    font-size: 0.8rem;
+    text-align: center;
+}
+
+.stars {
+    text-align: center;
+}
+
+.reviews {
+    min-width: 18.75rem;
+    max-width: 23rem;
+}
+
+.icon {
+    border-radius:50%;
+    width:3em;
+    margin-right: 1rem;
+}
+
+.stack {
+    display: flex;
+}
+
+.review_one {
+    background-color: var(--dark_magenta);
+    padding:1.5rem;
+    border-radius: 8px;
+    margin-top:2.5rem;
+}
+
+.review_one h3 {
+    color: var(--light_grayish_magenta);
+    margin-top: 0.5rem;
+    margin-bottom: 0.4rem;
+    font-size: 0.9rem;
+    font-weight: 700;
+}
+
+.review_one .buyer {
+    color: var(--soft_pink);
+    font-weight: 400;
+    font-size: 0.9rem;
+    margin: 0;
+}
+
+.review_one p {
+    color: var(--light_grayish_magenta);
+    font-size: 1rem;
+}
+
+.review_two {
+    background-color: var(--dark_magenta);
+    padding:1.5rem;
+    border-radius: 8px;
+    margin-top:2.5rem;
+}
+
+.review_two h3 {
+    color: var(--light_grayish_magenta);
+    margin-top: 0.5rem;
+    margin-bottom: 0.4rem;
+    font-size: 0.9rem;
+    font-weight: 700;
+}
+
+.review_two .buyer {
+    color: var(--soft_pink);
+    font-weight: 400;
+    font-size: 0.9rem;
+    margin: 0;
+}
+
+.review_two p {
+    color: var(--light_grayish_magenta);
+    font-size: 1rem;
+}
+
+.review_three {
+    background-color: var(--dark_magenta);
+    padding:1.5rem;
+    border-radius: 8px;
+    margin-top:2.5rem;
+}
+
+.review_three h3 {
+    color: var(--light_grayish_magenta);
+    margin-top: 0.5rem;
+    margin-bottom: 0.4rem;
+    font-size: 0.9rem;
+    font-weight: 700;
+}
+
+.review_three .buyer {
+    color: var(--soft_pink);
+    font-weight: 400;
+    font-size: 0.9rem;
+    margin: 0;
+}
+
+.review_three p {
+    color: var(--light_grayish_magenta);
+    font-size: 1rem;
+}
+
+@media only screen and (min-width: 62.5rem) {
+   body {
+       overflow: hidden;
+   }
+   
+    .container {
+        margin: auto;
+    }
+    
+    .users {
+        max-width: 20rem;
+    }
+
+    .users h2 {
+        text-align:left;
+    }
+
+    .users p {
+        text-align: left;
+    }
+
+    .users_and_rated {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .rated {
+        margin-left:14rem;
+        margin-top: 3rem;
+    }
+
+    .rated_one, .rated_two, .rated_three {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .rated h3 {
+        margin-top:0.1rem;
+        padding-left: 1rem;
+    }
+
+    .rated_one {
+        margin-left: -6.25rem;
+        width:20.5rem;
+    }
+
+    .rated_two {
+        margin-left: -4rem;
+        width:22rem;
+    }
+
+    .reviews {
+        display: flex;
+        flex-direction: row;
+        margin-left: -8rem;
+    }
+
+    .review_one {
+        margin-right: 1rem;
+        flex-shrink: 0;
+        width: 22rem;
+    }
+    
+    .review_two, .review_three {
+        margin-left: 1rem;
+        margin-right: 1rem;
+        flex-shrink: 0;
+        width: 22rem;
+    }
+}
